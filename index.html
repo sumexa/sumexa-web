@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMEXA | Conecta. Compara. Consigue.</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+<header class="sumexa-header">
+    <div class="sumexa-header-contenido">
+
+        <a href="index.html" class="sumexa-header-logo">
+            <img src="SUMEXA-TRANSPARENTE.png" alt="SUMEXA">
+        </a>
+
+        <nav class="sumexa-menu">
+            <a href="index.html">Inicio</a>
+            <a href="como-funciona.html">¿Cómo funciona?</a>
+            <a href="para-empresas.html">Para Empresas</a>
+            <a href="para-proveedores.html">Para Proveedores</a>
+        </nav>
+
+        <a href="solicitar-presupuesto.html" class="sumexa-header-boton">
+    Solicitar presupuesto
+</a>
+<button class="menu-movil-boton" id="menuMovilBoton" aria-label="Abrir menú">
+    ☰
+</button>
+    </div>
+</header>
+<main>
+
+    <section class="hero">
+
+    <div class="contenedor hero-inicio-grid">
+
+        <div class="hero-inicio-texto">
+
+            <h1>
+                Encontrar proveedores para tu empresa nunca fue tan fácil
+            </h1>
+
+            <p>
+                Dinos qué necesita tu empresa. SUMEXA busca proveedores,
+                recopila opciones y las centraliza para que tú solo tengas
+                que comparar y decidir.
+            </p>
+
+            <div class="hero-botones">
+                <a href="solicitar-presupuesto.html" class="boton-principal">Solicitar presupuesto</a>
+                <a href="como-funciona.html" class="boton-secundario">Cómo funciona</a>
+            </div>
+
+        </div>
+
+        <div class="hero-inicio-imagen">
+            <img src="inicio-conexion.png"
+                 alt="SUMEXA conectando empresas con diferentes proveedores">
+        </div>
+
+    </div>
+
+</section>
+<section class="como-funciona">
+    <div class="contenedor">
+
+        <h2>¿Cómo funciona SUMEXA?</h2>
+
+        <p class="subtitulo-seccion">
+            Nos cuentas qué necesita tu empresa y nosotros nos encargamos de buscar, comparar y centralizar las mejores opciones.
+        </p>
+
+        <div class="pasos">
+
+            <div class="paso">
+                <h3>1. Cuéntanos qué necesitas</h3>
+                <p>Indícanos el producto o servicio que busca tu empresa.</p>
+            </div>
+
+            <div class="paso">
+                <h3>2. Buscamos proveedores</h3>
+                <p>Localizamos proveedores que puedan adaptarse a tu solicitud.</p>
+            </div>
+
+            <div class="paso">
+                <h3>3. Compara presupuestos</h3>
+                <p>Centralizamos las distintas opciones para que puedas compararlas fácilmente.</p>
+            </div>
+
+            <div class="paso">
+                <h3>4. Tú decides</h3>
+                <p>Elige la opción que mejor encaje con las necesidades de tu empresa.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="que-es-sumexa">
+    <div class="contenedor que-es-contenido">
+
+        <div class="que-es-texto">
+            <p class="etiqueta">CONOCE SUMEXA</p>
+
+            <h2>Tu conexión con los proveedores que tu empresa necesita</h2>
+
+            <p>
+                SUMEXA nace para simplificar la búsqueda de proveedores.
+                Nos cuentas qué necesita tu empresa y nosotros nos encargamos
+                de localizar alternativas, recopilar propuestas y centralizar
+                las opciones para facilitar tu decisión.
+            </p>
+
+            <p>
+                Menos tiempo buscando. Más opciones para decidir.
+            </p>
+        </div>
+
+       <div class="que-es-imagen">
+    <img src="inicio-comparacion.png"
+         alt="Empresa comparando diferentes propuestas de proveedores">
+</div>
+
+    </div>
+</section>
+<section class="identidad-sumexa">
+    <div class="contenedor">
+
+        <div class="titulo-identidad">
+            <p class="etiqueta">NUESTRA IDENTIDAD</p>
+            <h2>Misión, visión y valores</h2>
+            <p>
+                La forma en la que trabajamos define cómo queremos construir SUMEXA
+                y relacionarnos con empresas, proveedores y colaboradores.
+            </p>
+        </div>
+
+        <div class="bloques-identidad">
+
+            <div class="bloque-identidad">
+                <h3>Misión</h3>
+                <p>
+                    Facilitar las relaciones comerciales entre empresas y proveedores,
+                    simplificando la búsqueda, conexión y comparación de las soluciones
+                    que cada empresa necesita.
+                </p>
+            </div>
+
+            <div class="bloque-identidad">
+                <h3>Visión</h3>
+                <p>
+                    Convertir a SUMEXA en una empresa de referencia en la gestión e
+                    intermediación entre empresas y proveedores, creando una red sólida,
+                    eficiente y de confianza.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="valores">
+            <h3>Nuestros valores</h3>
+
+            <div class="lista-valores">
+
+    <button class="valor-btn" onclick="mostrarValor('honestidad')">Honestidad</button>
+    <button class="valor-btn" onclick="mostrarValor('transparencia')">Transparencia</button>
+    <button class="valor-btn" onclick="mostrarValor('lealtad')">Lealtad</button>
+    <button class="valor-btn" onclick="mostrarValor('respeto')">Respeto</button>
+    <button class="valor-btn" onclick="mostrarValor('compromiso')">Compromiso</button>
+    <button class="valor-btn" onclick="mostrarValor('agilidad')">Agilidad</button>
+
+</div>
+
+<div id="explicacion-valor" class="explicacion-valor">
+    <h4 id="titulo-valor">Selecciona un valor</h4>
+    <p id="texto-valor">
+        Haz clic en uno de nuestros valores para conocer qué significa para SUMEXA.
+    </p>
+</div>
+        </div>
+
+    </div>
+</section>
+<section class="para-quien">
+    <div class="contenedor">
+
+        <div class="titulo-para-quien">
+            <p class="etiqueta">DOS NECESIDADES, UNA CONEXIÓN</p>
+            <h2>SUMEXA conecta empresas y proveedores</h2>
+            <p>
+                Facilitamos el encuentro entre quienes necesitan una solución
+                y quienes pueden ofrecerla.
+            </p>
+        </div>
+<div class="para-quien-imagen">
+    <img src="inicio-intermediacion.png"
+         alt="SUMEXA intermediando entre una empresa y un proveedor">
+</div>
+        <div class="opciones-sumexa">
+
+            <div class="opcion-sumexa">
+                <span class="tipo-opcion">PARA EMPRESAS</span>
+                <h3>Encuentra los proveedores que necesitas</h3>
+                <p>
+                    Cuéntanos qué producto o servicio estás buscando.
+                    SUMEXA localiza alternativas, recopila propuestas y
+                    centraliza las opciones para que puedas comparar.
+                </p>
+
+                <a href="solicitar-presupuesto.html" class="enlace-opcion">
+                    Quiero encontrar proveedores →
+                </a>
+            </div>
+
+            <div class="opcion-sumexa">
+                <span class="tipo-opcion">PARA PROVEEDORES</span>
+                <h3>Accede a nuevas oportunidades</h3>
+                <p>
+                    Forma parte de la red de SUMEXA y recibe oportunidades
+                    relacionadas con los productos o servicios que ofrece
+                    tu empresa.
+                </p>
+
+                <a href="#" class="enlace-opcion">
+                    Quiero ser proveedor →
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- SUMEXA EN ACCIÓN -->
+
+<section class="sumexa-accion">
+
+    <div class="contenedor">
+
+        <div class="titulo-accion">
+            <p class="etiqueta">SUMEXA EN ACCIÓN</p>
+            <h2>Una necesidad. Diferentes opciones. Una sola conexión.</h2>
+            <p>
+                Descubre cómo SUMEXA conecta las necesidades de tu empresa
+                con proveedores capaces de ofrecer una solución.
+            </p>
+        </div>
+
+        <div class="flujo-sumexa">
+
+    <!-- EMPRESA -->
+    <div class="elemento-flujo empresa-flujo">
+        <span>TU EMPRESA</span>
+        <h3>Necesito un proveedor</h3>
+        <p class="detalle-flujo">Nos cuentas qué necesitas</p>
+    </div>
+
+    <div class="flecha-flujo flecha-1">→</div>
+
+    <!-- SUMEXA -->
+    <div class="elemento-flujo centro-sumexa">
+        <img src="SUMEXA-TRANSPARENTE.png" alt="SUMEXA">
+        <p>Buscamos · Centralizamos · Comparamos</p>
+    </div>
+
+    <div class="flecha-flujo flecha-2">→</div>
+
+    <!-- PROVEEDORES -->
+    <div class="grupo-proveedores">
+
+        <div class="proveedor proveedor-a">
+            <span>PROVEEDOR A</span>
+            <p>Opción 1</p>
+        </div>
+
+        <div class="proveedor proveedor-b">
+            <span>PROVEEDOR B</span>
+            <p>Opción 2</p>
+        </div>
+
+        <div class="proveedor proveedor-c">
+            <span>PROVEEDOR C</span>
+            <p>Opción 3</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="resultado-flujo" class="resultado-flujo">
+    <span>PROPUESTAS CENTRALIZADAS</span>
+    <h3>Compara las opciones y decide</h3>
+    <p>SUMEXA te facilita las alternativas. La decisión final es tuya.</p>
+</div>
+
+        <button id="iniciar-flujo" class="boton-flujo">
+            Ver cómo funciona
+        </button>
+
+        <div id="mensaje-flujo" class="mensaje-flujo">
+            Pulsa el botón para ver cómo trabaja SUMEXA.
+        </div>
+
+    </div>
+
+</section>
+<section class="beneficios-sumexa">
+    <div class="contenedor">
+
+        <div class="titulo-beneficios">
+            <p class="etiqueta">¿POR QUÉ SUMEXA?</p>
+            <h2>Menos tiempo buscando. Más opciones para decidir.</h2>
+            <p>
+                Centralizamos la búsqueda de proveedores para que tu empresa
+                pueda dedicar su tiempo a lo que realmente importa.
+            </p>
+        </div>
+
+        <div class="grid-beneficios">
+
+            <div class="beneficio">
+                <h3>Ahorra tiempo</h3>
+                <p>
+                    Evita dedicar horas a localizar proveedores,
+                    contactar con ellos y recopilar propuestas.
+                </p>
+            </div>
+
+            <div class="beneficio">
+                <h3>Compara alternativas</h3>
+                <p>
+                    Recibe diferentes opciones organizadas para facilitar
+                    la comparación y la toma de decisiones.
+                </p>
+            </div>
+
+            <div class="beneficio">
+                <h3>Descubre nuevos proveedores</h3>
+                <p>
+                    Accede a empresas y soluciones que quizá no conocías
+                    o no habrías encontrado fácilmente.
+                </p>
+            </div>
+
+            <div class="beneficio">
+                <h3>Todo centralizado</h3>
+                <p>
+                    Una sola conexión para gestionar la búsqueda y
+                    acceder a diferentes alternativas.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="cta-final">
+    <div class="contenedor cta-contenido">
+
+        <p class="etiqueta">EMPIEZA CON SUMEXA</p>
+
+        <h2>Dinos qué necesita tu empresa. Nosotros empezamos a buscar.</h2>
+
+        <p>
+            Cuéntanos qué producto o servicio necesitas y SUMEXA se encargará
+            de localizar y centralizar distintas opciones para ti.
+        </p>
+
+        <a href="solicitar-presupuesto.html" class="boton-cta-final">
+    Solicitar presupuesto
+</a>
+
+    </div>
+</section>
+</main>
+<footer class="footer-sumexa">
+
+    <div class="contenedor footer-contenido">
+
+        <!-- MARCA -->
+        <div class="footer-marca">
+
+            <img src="sumexa-transparente.png" alt="SUMEXA">
+
+            <p>Conecta. Compara. Consigue.</p>
+
+            <div class="footer-redes">
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/sumexa.es/" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm.5 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+                    </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5.3 3.5A2.3 2.3 0 1 1 5.3 8a2.3 2.3 0 0 1 0-4.5zM3.3 9.5h4V21h-4V9.5zm6.5 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6.1V21h-4v-5.2c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21h-4V9.5z"/>
+                    </svg>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/19Upxxxk6L/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v2H6v4h3v7h4v-7h3.3l.7-4H13V9c0-.7.3-1 1-1z"/>
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVEGACIÓN -->
+<div class="footer-enlaces footer-nav">
+
+    <h4>SUMEXA</h4>
+            <a href="index.html">Inicio</a>
+            <a href="como-funciona.html">¿Cómo funciona?</a>
+            <a href="para-empresas.html">Para Empresas</a>
+            <a href="para-proveedores.html">Para Proveedores</a>
+
+        </div>
+
+
+        <!-- CONTACTO -->
+<div class="footer-enlaces footer-contacto">
+
+    <h4>Contacto</h4>
+            <a href="mailto:sumexatnf@gmail.com">
+                sumexatnf@gmail.com
+            </a>
+
+            <a href="tel:+34644966505">
+                +34 644 966 505
+            </a>
+
+        </div>
+
+
+        <!-- LEGAL -->
+       <!-- LEGAL -->
+<div class="footer-enlaces footer-legal">
+
+    <h4>Legal</h4>
+            <a href="aviso-legal.html">Aviso Legal</a>
+<a href="politica-privacidad.html">Política de Privacidad</a>
+<a href="politica-cookies.html">Política de Cookies</a>
+<a href="#" class="abrir-configuracion-cookies">
+    Configurar cookies
+</a>
+<a href="condiciones-uso.html">Condiciones de Uso</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PARTE INFERIOR -->
+  <div class="footer-inferior">
+
+        <div class="contenedor">
+            <p>© 2026 SUMEXA. Todos los derechos reservados.</p>
+        </div>
+
+    </div>
+
+</footer>
+<script>
+    function mostrarValor(valor) {
+
+        const titulo = document.getElementById("titulo-valor");
+        const texto = document.getElementById("texto-valor");
+
+        const valores = {
+
+            honestidad: {
+                titulo: "Honestidad",
+                texto: "Actuamos de forma íntegra y responsable en todas nuestras relaciones comerciales."
+            },
+
+            transparencia: {
+                titulo: "Transparencia",
+                texto: "Ofrecemos información clara y mantenemos una comunicación abierta con empresas y proveedores durante todo el proceso."
+            },
+
+            lealtad: {
+                titulo: "Lealtad",
+                texto: "Buscamos construir relaciones duraderas basadas en la confianza y el respeto a los intereses de quienes colaboran con SUMEXA."
+            },
+
+            respeto: {
+                titulo: "Respeto",
+                texto: "Tratamos de manera profesional y responsable a clientes, proveedores y colaboradores."
+            },
+
+            compromiso: {
+                titulo: "Compromiso",
+                texto: "Nos implicamos activamente en cada solicitud para encontrar soluciones adecuadas a las necesidades de cada empresa."
+            },
+
+            agilidad: {
+                titulo: "Agilidad",
+                texto: "Trabajamos para reducir al máximo los tiempos de búsqueda y conectar a cada empresa con proveedores adecuados lo antes posible."
+            }
+
+        };
+
+        titulo.textContent = valores[valor].titulo;
+        texto.textContent = valores[valor].texto;
+    }
+  const botonFlujo = document.getElementById("iniciar-flujo");
+const mensajeFlujo = document.getElementById("mensaje-flujo");
+
+const empresaFlujo = document.querySelector(".empresa-flujo");
+const centroSumexa = document.querySelector(".centro-sumexa");
+
+const proveedorA = document.querySelector(".proveedor-a");
+const proveedorB = document.querySelector(".proveedor-b");
+const proveedorC = document.querySelector(".proveedor-c");
+
+const flecha1 = document.querySelector(".flecha-1");
+const flecha2 = document.querySelector(".flecha-2");
+
+const resultadoFlujo = document.getElementById("resultado-flujo");
+
+
+function apagarTodo() {
+
+    empresaFlujo.classList.add("estado-apagado");
+    centroSumexa.classList.add("estado-apagado");
+
+    proveedorA.classList.add("estado-apagado");
+    proveedorB.classList.add("estado-apagado");
+    proveedorC.classList.add("estado-apagado");
+
+    resultadoFlujo.classList.add("estado-apagado");
+
+    flecha1.classList.add("estado-apagado");
+    flecha2.classList.add("estado-apagado");
+}
+
+
+function limpiarEstados() {
+
+    const elementos = [
+        empresaFlujo,
+        centroSumexa,
+        proveedorA,
+        proveedorB,
+        proveedorC,
+        resultadoFlujo,
+        flecha1,
+        flecha2
+    ];
+
+    elementos.forEach(function(elemento) {
+
+        elemento.classList.remove(
+            "estado-apagado",
+            "estado-activo",
+            "flecha-activa",
+            "proveedor-aparece",
+            "resultado-activo"
+        );
+
+    });
+}
+
+
+botonFlujo.addEventListener("click", function () {
+
+    limpiarEstados();
+    apagarTodo();
+
+    botonFlujo.disabled = true;
+    botonFlujo.textContent = "Procesando...";
+
+
+    /* PASO 1: EMPRESA */
+
+    empresaFlujo.classList.remove("estado-apagado");
+    empresaFlujo.classList.add("estado-activo");
+
+    mensajeFlujo.textContent =
+        "1. Tu empresa nos comunica qué producto o servicio necesita.";
+
+
+    /* PASO 2: SUMEXA */
+
+    setTimeout(function () {
+
+        empresaFlujo.classList.remove("estado-activo");
+        empresaFlujo.classList.add("estado-apagado");
+
+        flecha1.classList.remove("estado-apagado");
+        flecha1.classList.add("flecha-activa");
+
+        centroSumexa.classList.remove("estado-apagado");
+        centroSumexa.classList.add("estado-activo");
+
+        mensajeFlujo.textContent =
+            "2. SUMEXA analiza la necesidad y comienza la búsqueda.";
+
+    }, 3000);
+
+
+    /* PASO 3: BÚSQUEDA */
+
+    setTimeout(function () {
+
+        flecha1.classList.remove("flecha-activa");
+        flecha1.classList.add("estado-apagado");
+
+        flecha2.classList.remove("estado-apagado");
+        flecha2.classList.add("flecha-activa");
+
+        mensajeFlujo.textContent =
+            "3. Buscamos proveedores capaces de ofrecer una solución.";
+
+    }, 6000);
+
+
+    /* APARECE PROVEEDOR A */
+
+    setTimeout(function () {
+
+        proveedorA.classList.remove("estado-apagado");
+        proveedorA.classList.add("proveedor-aparece");
+
+    }, 7200);
+
+
+    /* APARECE PROVEEDOR B */
+
+    setTimeout(function () {
+
+        proveedorB.classList.remove("estado-apagado");
+        proveedorB.classList.add("proveedor-aparece");
+
+    }, 8400);
+
+
+    /* APARECE PROVEEDOR C */
+
+    setTimeout(function () {
+
+        proveedorC.classList.remove("estado-apagado");
+        proveedorC.classList.add("proveedor-aparece");
+
+    }, 9600);
+
+
+    /* PASO 4: CENTRALIZAMOS */
+
+    setTimeout(function () {
+
+        flecha2.classList.remove("flecha-activa");
+        flecha2.classList.add("estado-apagado");
+
+        proveedorA.classList.remove("proveedor-aparece");
+        proveedorB.classList.remove("proveedor-aparece");
+        proveedorC.classList.remove("proveedor-aparece");
+
+        centroSumexa.classList.add("estado-activo");
+
+        mensajeFlujo.textContent =
+            "4. SUMEXA recopila y centraliza las distintas propuestas.";
+
+    }, 11500);
+
+
+    /* PASO 5: DECISIÓN */
+
+    setTimeout(function () {
+
+        limpiarEstados();
+
+        resultadoFlujo.classList.add("resultado-activo");
+
+        mensajeFlujo.innerHTML =
+            "<strong>5. Compara las alternativas y elige la opción que mejor encaje con tu empresa.</strong>";
+
+        botonFlujo.disabled = false;
+        botonFlujo.textContent = "Volver a verlo";
+
+    }, 14500);
+
+});
+</script>
+<script>
+    const menuBoton = document.getElementById("menuMovilBoton");
+    const menu = document.querySelector(".sumexa-menu");
+    const botonPresupuesto = document.querySelector(".sumexa-header-boton");
+
+    menuBoton.addEventListener("click", () => {
+        menu.classList.toggle("menu-movil-abierto");
+        botonPresupuesto.classList.toggle("menu-movil-abierto");
+    });
+</script>
+<!-- =========================
+     BANNER DE COOKIES
+========================= -->
+
+<script src="cookies.js"></script>
+</body>
+</html>

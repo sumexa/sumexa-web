@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar presupuesto | SUMEXA</title>
+
+    <meta name="description"
+          content="Cuéntanos qué necesita tu empresa. SUMEXA busca proveedores y centraliza las opciones para que puedas comparar y decidir.">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="sumexa-header">
+
+    <div class="sumexa-header-contenido">
+
+        <a href="index.html" class="sumexa-header-logo">
+            <img src="SUMEXA-TRANSPARENTE.png"
+                 alt="SUMEXA">
+        </a>
+
+
+        <nav class="sumexa-menu">
+
+            <a href="index.html">Inicio</a>
+
+            <a href="como-funciona.html">
+                ¿Cómo funciona?
+            </a>
+
+            <a href="para-empresas.html">
+                Para Empresas
+            </a>
+
+            <a href="para-proveedores.html">
+                Para Proveedores
+            </a>
+
+        </nav>
+
+
+        <a href="solicitar-presupuesto.html"
+           class="sumexa-header-boton">
+            Solicitar presupuesto
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     CABECERA FORMULARIO
+========================= -->
+
+<section class="solicitud-hero">
+
+    <div class="contenedor solicitud-hero-contenido">
+
+        <span class="solicitud-etiqueta">
+            PARA EMPRESAS
+        </span>
+
+        <h1>
+            Cuéntanos qué necesita tu empresa
+        </h1>
+
+        <p>
+            Facilítanos algunos datos sobre lo que estás buscando.
+            SUMEXA analizará tu solicitud y buscará opciones de
+            proveedores que se adapten a tus necesidades.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FORMULARIO
+========================= -->
+
+<main class="solicitud-seccion">
+
+    <div class="contenedor solicitud-contenedor">
+
+
+        <form class="solicitud-formulario"
+      id="formularioPresupuesto"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <input type="hidden"
+           name="access_key"
+           value="a1db39b5-26ad-4568-af85-c8af6231d4c4">
+
+    <input type="hidden"
+           name="subject"
+           value="Nueva solicitud de presupuesto - SUMEXA">
+
+    <input type="hidden"
+           name="from_name"
+           value="Web SUMEXA">
+
+
+            <!-- DATOS DE CONTACTO -->
+
+            <div class="form-bloque">
+
+                <div class="form-bloque-cabecera">
+
+                    <span class="form-numero">01</span>
+
+                    <div>
+                        <h2>Datos de contacto</h2>
+
+                        <p>
+                            Indícanos cómo podemos contactar contigo
+                            respecto a esta solicitud.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-campo">
+
+                        <label for="empresa">
+                            Nombre de la empresa *
+                        </label>
+
+                        <input type="text"
+                               id="empresa"
+                               name="empresa"
+                               autocomplete="organization"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="contacto">
+                            Persona de contacto *
+                        </label>
+
+                        <input type="text"
+                               id="contacto"
+                               name="contacto"
+                               autocomplete="name"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="email">
+                            Correo electrónico *
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               autocomplete="email"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="telefono">
+                            Teléfono *
+                        </label>
+
+                        <input type="tel"
+                               id="telefono"
+                               name="telefono"
+                               autocomplete="tel"
+                               required>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NECESIDAD -->
+
+            <div class="form-bloque">
+
+                <div class="form-bloque-cabecera">
+
+                    <span class="form-numero">02</span>
+
+                    <div>
+                        <h2>¿Qué necesita tu empresa?</h2>
+
+                        <p>
+                            Cuanta más información nos facilites,
+                            mejor podremos orientar la búsqueda.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-campo form-campo-completo">
+
+                        <label for="producto">
+                            Producto o servicio que buscas *
+                        </label>
+
+                        <input type="text"
+                               id="producto"
+                               name="producto"
+                               placeholder="Ej. 30 sillas de oficina"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo form-campo-completo">
+
+                        <label for="descripcion">
+                            Descripción de lo que necesitas *
+                        </label>
+
+                        <textarea id="descripcion"
+                                  name="descripcion"
+                                  rows="6"
+                                  placeholder="Describe características, medidas, especificaciones o cualquier requisito importante."
+                                  required></textarea>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="cantidad">
+                            Cantidad aproximada
+                        </label>
+
+                        <input type="text"
+                               id="cantidad"
+                               name="cantidad"
+                               placeholder="Ej. 30 unidades">
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="ubicacion">
+                            Lugar de entrega o prestación *
+                        </label>
+
+                        <input type="text"
+                               id="ubicacion"
+                               name="ubicacion"
+                               placeholder="Ej. Santa Cruz de Tenerife"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="fecha">
+                            ¿Para cuándo lo necesitas?
+                        </label>
+
+                        <input type="date"
+                               id="fecha"
+                               name="fecha">
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="presupuesto">
+                            Presupuesto orientativo
+                        </label>
+
+                        <input type="text"
+                               id="presupuesto"
+                               name="presupuesto"
+                               placeholder="Opcional">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INFORMACIÓN ADICIONAL -->
+
+            <div class="form-bloque">
+
+                <div class="form-bloque-cabecera">
+
+                    <span class="form-numero">03</span>
+
+                    <div>
+                        <h2>Información adicional</h2>
+
+                        <p>
+                            Añade cualquier información que pueda
+                            ayudarnos a entender mejor tu solicitud.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-campo">
+
+                    <label for="observaciones">
+                        Observaciones adicionales
+                    </label>
+
+                    <textarea id="observaciones"
+                              name="observaciones"
+                              rows="5"
+                              placeholder="Marcas preferidas, condiciones especiales, alternativas que aceptarías, etc."></textarea>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRIVACIDAD -->
+
+            <div class="form-legal">
+
+                <label class="form-checkbox">
+
+                    <input type="checkbox"
+                           id="aceptarLegal"
+                           name="aceptarLegal"
+                           required>
+
+                    <span>
+                        He leído y acepto la
+                        <a href="politica-privacidad.html"
+                           target="_blank">
+                            Política de Privacidad
+                        </a>
+                        y las
+                        <a href="condiciones-uso.html"
+                           target="_blank">
+                            Condiciones de Uso
+                        </a>.
+                    </span>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- ENVÍO -->
+
+            <div class="form-envio">
+
+                <button type="submit"
+                        class="form-boton-enviar">
+                    Enviar solicitud
+                </button>
+
+                <p>
+                    Revisaremos la información para comenzar
+                    a gestionar tu solicitud.
+                </p>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="contenedor footer-contenido">
+
+
+        <div class="footer-marca">
+
+            <img src="SUMEXA-TRANSPARENTE.png"
+                 alt="SUMEXA"
+                 class="footer-logo">
+
+            <p>
+                Conectamos empresas con proveedores.
+                Centralizamos opciones para ayudarte
+                a comparar y decidir mejor.
+            </p>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h4>SUMEXA</h4>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="como-funciona.html">
+                ¿Cómo funciona?
+            </a>
+
+            <a href="para-empresas.html">
+                Para Empresas
+            </a>
+
+            <a href="para-proveedores.html">
+                Para Proveedores
+            </a>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h4>Contacto</h4>
+
+            <a href="mailto:sumexatnf@gmail.com">
+                sumexatnf@gmail.com
+            </a>
+
+            <a href="tel:+34644966505">
+                +34 644 966 505
+            </a>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h4>Legal</h4>
+
+            <a href="aviso-legal.html">
+                Aviso Legal
+            </a>
+
+            <a href="politica-privacidad.html">
+                Política de Privacidad
+            </a>
+
+            <a href="politica-cookies.html">
+                Política de Cookies
+            </a>
+
+            <a href="#"
+               class="abrir-configuracion-cookies">
+                Configurar cookies
+            </a>
+
+            <a href="condiciones-uso.html">
+                Condiciones de Uso
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-inferior">
+
+        <div class="contenedor">
+
+            <p>
+                © 2026 SUMEXA. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const formulario =
+        document.getElementById("formularioPresupuesto");
+
+    const boton =
+        formulario.querySelector(".form-boton-enviar");
+
+    formulario.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+        const textoOriginal = boton.textContent;
+
+        boton.disabled = true;
+        boton.textContent = "Enviando...";
+
+        const datos = new FormData(formulario);
+
+        try {
+
+            const respuesta = await fetch(
+                "https://api.web3forms.com/submit",
+                {
+                    method: "POST",
+                    body: datos
+                }
+            );
+
+            const resultado = await respuesta.json();
+
+            if (resultado.success) {
+
+                formulario.innerHTML = `
+
+                    <div class="solicitud-exito">
+
+                        <div class="solicitud-exito-icono">
+                            ✓
+                        </div>
+
+                        <h2>
+                            Solicitud recibida correctamente
+                        </h2>
+
+                        <p>
+                            Hemos recibido la información de tu empresa.
+                            SUMEXA revisará tu solicitud para comenzar
+                            a buscar opciones de proveedores adecuadas
+                            a tus necesidades.
+                        </p>
+
+                        <a href="index.html"
+                           class="form-boton-enviar">
+                            Volver a Inicio
+                        </a>
+
+                    </div>
+
+                `;
+
+                window.scrollTo({
+                    top: formulario.offsetTop - 120,
+                    behavior: "smooth"
+                });
+
+            } else {
+
+                throw new Error("Error en el envío");
+
+            }
+
+        } catch (error) {
+
+            boton.disabled = false;
+            boton.textContent = textoOriginal;
+
+            alert(
+                "No hemos podido enviar la solicitud. Inténtalo de nuevo en unos minutos."
+            );
+
+        }
+
+    });
+
+});
+</script>
+
+
+<!-- SISTEMA DE COOKIES -->
+
+<script src="cookies.js"></script>
+
+
+</body>
+
+</html>

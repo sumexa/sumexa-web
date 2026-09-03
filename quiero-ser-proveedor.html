@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Quiero ser proveedor | SUMEXA</title>
+
+    <meta name="description"
+          content="Forma parte de la red de proveedores de SUMEXA y accede a nuevas oportunidades comerciales con empresas.">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header class="sumexa-header">
+
+    <div class="sumexa-header-contenido">
+
+        <a href="index.html"
+           class="sumexa-header-logo">
+
+            <img src="SUMEXA-TRANSPARENTE.png"
+                 alt="SUMEXA">
+
+        </a>
+
+
+        <nav class="sumexa-menu">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="como-funciona.html">
+                ¿Cómo funciona?
+            </a>
+
+            <a href="para-empresas.html">
+                Para Empresas
+            </a>
+
+            <a href="para-proveedores.html">
+                Para Proveedores
+            </a>
+
+        </nav>
+
+
+        <a href="solicitar-presupuesto.html"
+           class="sumexa-header-boton">
+
+            Solicitar presupuesto
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="solicitud-hero">
+
+    <div class="contenedor solicitud-hero-contenido">
+
+        <span class="solicitud-etiqueta">
+            PARA PROVEEDORES
+        </span>
+
+        <h1>
+            Forma parte de la red de proveedores de SUMEXA
+        </h1>
+
+        <p>
+            Cuéntanos qué ofrece tu empresa y dónde opera.
+            Utilizaremos esta información para tenerte en cuenta
+            cuando surjan oportunidades que encajen con tus
+            productos o servicios.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     FORMULARIO
+===================================== -->
+
+<section class="solicitud-seccion">
+
+    <div class="contenedor solicitud-contenedor">
+
+
+        <form class="solicitud-formulario"
+              id="formularioProveedor"
+              action="https://api.web3forms.com/submit"
+              method="POST">
+
+
+            <!-- WEB3FORMS -->
+
+            <input type="hidden"
+                   name="access_key"
+                   value="a1db39b5-26ad-4568-af85-c8af6231d4c4">
+
+            <input type="hidden"
+                   name="subject"
+                   value="Nueva solicitud de proveedor - SUMEXA">
+
+            <input type="hidden"
+                   name="from_name"
+                   value="Web SUMEXA">
+
+
+
+            <!-- =====================================
+                 BLOQUE 1
+            ===================================== -->
+
+            <div class="form-bloque">
+
+                <div class="form-bloque-cabecera">
+
+                    <span class="form-numero">
+                        1
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Datos de la empresa
+                        </h2>
+
+                        <p>
+                            Información básica para conocer
+                            y contactar con tu empresa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-campo">
+
+                        <label for="empresa">
+                            Nombre de la empresa *
+                        </label>
+
+                        <input type="text"
+                               id="empresa"
+                               name="Empresa"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="contacto">
+                            Persona de contacto *
+                        </label>
+
+                        <input type="text"
+                               id="contacto"
+                               name="Persona de contacto"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="email">
+                            Correo electrónico *
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               name="Email"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="telefono">
+                            Teléfono *
+                        </label>
+
+                        <input type="tel"
+                               id="telefono"
+                               name="Telefono"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="cif">
+                            NIF / CIF
+                        </label>
+
+                        <input type="text"
+                               id="cif"
+                               name="NIF o CIF">
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="web">
+                            Página web
+                        </label>
+
+                        <input type="url"
+                               id="web"
+                               name="Pagina web"
+                               placeholder="https://">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 BLOQUE 2
+            ===================================== -->
+
+            <div class="form-bloque">
+
+                <div class="form-bloque-cabecera">
+
+                    <span class="form-numero">
+                        2
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            ¿Qué ofrece tu empresa?
+                        </h2>
+
+                        <p>
+                            Cuanta más información tengamos,
+                            mejor podremos identificar oportunidades
+                            adecuadas para tu empresa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-campo form-campo-completo">
+
+                        <label for="productos">
+                            Productos o servicios que ofrece *
+                        </label>
+
+                        <input type="text"
+                               id="productos"
+                               name="Productos o servicios"
+                               placeholder="Ej. mobiliario de oficina, equipamiento deportivo, transporte..."
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo form-campo-completo">
+
+                        <label for="descripcion">
+                            Describe brevemente tu actividad *
+                        </label>
+
+                        <textarea id="descripcion"
+                                  name="Descripcion de la empresa"
+                                  rows="5"
+                                  placeholder="Explícanos qué comercializa o qué servicios presta tu empresa..."
+                                  required></textarea>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="zona">
+                            Zona en la que opera *
+                        </label>
+
+                        <input type="text"
+                               id="zona"
+                               name="Zona de operacion"
+                               placeholder="Ej. Canarias, España, nacional..."
+                               required>
+
+                    </div>
+
+
+                    <div class="form-campo">
+
+                        <label for="distribucion">
+                            Zona de distribución o prestación
+                        </label>
+
+                        <input type="text"
+                               id="distribucion"
+                               name="Zona de distribucion"
+                               placeholder="Ej. Tenerife, toda Canarias, península...">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 BLOQUE 3
+            ===================================== -->
+
+            <div class="form-bloque">
+
+                <div class="form-bloque-cabecera">
+
+                    <span class="form-numero">
+                        3
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Información adicional
+                        </h2>
+
+                        <p>
+                            Puedes indicarnos cualquier dato
+                            que consideres relevante.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-campo form-campo-completo">
+
+                        <label for="informacion">
+                            Información adicional
+                        </label>
+
+                        <textarea id="informacion"
+                                  name="Informacion adicional"
+                                  rows="5"
+                                  placeholder="Marcas con las que trabajas, capacidad de suministro, condiciones, experiencia, zonas de envío..."></textarea>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 LEGAL
+            ===================================== -->
+
+            <div class="form-legal">
+
+                <label class="form-checkbox">
+
+                    <input type="checkbox"
+                           name="Aceptacion de condiciones"
+                           required>
+
+                    <span>
+
+                        He leído y acepto las
+
+                        <a href="condiciones-proveedores.html"
+                           target="_blank">
+
+                            Condiciones para Proveedores
+
+                        </a>
+
+                        y he leído la
+
+                        <a href="politica-privacidad.html"
+                           target="_blank">
+
+                            Política de Privacidad
+
+                        </a>.
+
+                    </span>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 ENVIAR
+            ===================================== -->
+
+            <div class="form-envio">
+
+                <button type="submit"
+                        class="form-boton-enviar">
+
+                    Enviar solicitud
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="footer">
+
+    <div class="contenedor footer-contenido">
+
+
+        <!-- MARCA -->
+
+        <div class="footer-marca">
+
+            <img src="SUMEXA-TRANSPARENTE.png"
+                 alt="SUMEXA"
+                 class="footer-logo">
+
+            <p>
+                Conectamos empresas con los proveedores
+                que necesitan.
+            </p>
+
+        </div>
+
+
+
+        <!-- SUMEXA -->
+
+        <div class="footer-columna">
+
+            <h4>
+                SUMEXA
+            </h4>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="como-funciona.html">
+                ¿Cómo funciona?
+            </a>
+
+            <a href="para-empresas.html">
+                Para Empresas
+            </a>
+
+            <a href="para-proveedores.html">
+                Para Proveedores
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACTO -->
+
+        <div class="footer-columna">
+
+            <h4>
+                Contacto
+            </h4>
+
+            <a href="mailto:sumexatnf@gmail.com">
+                sumexatnf@gmail.com
+            </a>
+
+            <a href="tel:+34644966505">
+                +34 644 966 505
+            </a>
+
+        </div>
+
+
+
+        <!-- LEGAL -->
+
+        <div class="footer-columna">
+
+            <h4>
+                Legal
+            </h4>
+
+            <a href="aviso-legal.html">
+                Aviso Legal
+            </a>
+
+            <a href="politica-privacidad.html">
+                Política de Privacidad
+            </a>
+
+            <a href="politica-cookies.html">
+                Política de Cookies
+            </a>
+
+            <a href="condiciones-uso.html">
+                Condiciones de Uso
+            </a>
+
+            <a href="#"
+               class="abrir-configuracion-cookies">
+
+                Configurar cookies
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-inferior">
+
+        <div class="contenedor">
+
+            <p>
+                © 2026 SUMEXA. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================
+     ENVÍO DEL FORMULARIO
+===================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const formulario =
+        document.getElementById("formularioProveedor");
+
+    const boton =
+        formulario.querySelector(".form-boton-enviar");
+
+
+    formulario.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+
+        const textoOriginal =
+            boton.textContent;
+
+
+        boton.disabled = true;
+
+        boton.textContent =
+            "Enviando...";
+
+
+        const datos =
+            new FormData(formulario);
+
+
+        try {
+
+
+            const respuesta =
+                await fetch(
+                    "https://api.web3forms.com/submit",
+                    {
+                        method: "POST",
+                        body: datos
+                    }
+                );
+
+
+            const resultado =
+                await respuesta.json();
+
+
+            if (resultado.success) {
+
+
+                formulario.innerHTML = `
+
+                    <div class="solicitud-exito">
+
+                        <div class="solicitud-exito-icono">
+                            ✓
+                        </div>
+
+                        <h2>
+                            Solicitud recibida correctamente
+                        </h2>
+
+                        <p>
+                            Hemos recibido la información de tu empresa.
+                            SUMEXA revisará tu solicitud para conocer
+                            tus productos o servicios y tenerte en cuenta
+                            cuando surjan oportunidades adecuadas.
+                        </p>
+
+                        <a href="index.html"
+                           class="form-boton-enviar">
+
+                            Volver a Inicio
+
+                        </a>
+
+                    </div>
+
+                `;
+
+
+                window.scrollTo({
+
+                    top: formulario.offsetTop - 120,
+
+                    behavior: "smooth"
+
+                });
+
+
+            } else {
+
+
+                throw new Error(
+                    "Error en el envío"
+                );
+
+
+            }
+
+
+        } catch (error) {
+
+
+            boton.disabled = false;
+
+            boton.textContent =
+                textoOriginal;
+
+
+            alert(
+                "No hemos podido enviar la solicitud. Inténtalo de nuevo en unos minutos."
+            );
+
+
+        }
+
+
+    });
+
+
+});
+
+</script>
+
+
+
+<!-- COOKIES -->
+
+<script src="cookies.js"></script>
+
+
+</body>
+
+</html>
